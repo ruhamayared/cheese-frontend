@@ -4,7 +4,16 @@ import { Heading } from "../styles"
 export default function Show(props) {
   const cheese = useLoaderData()
   return (
-    <section style={{ width: "70%", margin: "auto" }}>
+    <section
+      style={{
+        width: "70%",
+        margin: "auto",
+        backgroundColor: "#fae8cf",
+        borderRadius: "10px",
+        padding: "10px",
+        marginTop: "20px",
+      }}
+    >
       <Heading>{cheese.name}</Heading>
       <h1>{cheese.countryOfOrigin}</h1>
       <img src={cheese.image} alt={cheese.name} />
